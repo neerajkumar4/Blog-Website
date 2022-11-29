@@ -9,11 +9,11 @@
 <% posts.forEach(element=>{ %>
     <div>
         <h1>
-           <%= element.Title %>
+           <%= element.title %>
         </h1>
         <p>
-          <%=  element.Content.substring(0,100)+" ..." %>
-          <a href="/posts/<%= element.Title %>">Read More</a>
+          <%=  element.content.substring(0,100)+" ..." %>
+          <a href="/posts/<%= element._id %>">Read More</a>
         </p>
     </div>
 <% }) %>
